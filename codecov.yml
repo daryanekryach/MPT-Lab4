@@ -1,0 +1,8 @@
+codecov:
+  ci:
+    - appveyor      
+  token: b52d19d8-954d-4782-a2a3-51ca92a323be
+  
+coverage:
+  round: up
+  range: 0..10

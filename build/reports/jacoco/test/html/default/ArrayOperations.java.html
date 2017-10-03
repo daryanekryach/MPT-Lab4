@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ArrayOperations.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab 4</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">ArrayOperations.java</span></div><h1>ArrayOperations.java</h1><pre class="source lang-java linenums">public class ArrayOperations {
+    int[] array;
+    int size, max, min;
+
+<span class="fc" id="L5">    public ArrayOperations(int[] _array) {</span>
+<span class="fc" id="L6">        array = _array;</span>
+<span class="fc" id="L7">        size = array.length;</span>
+<span class="fc" id="L8">    }</span>
+
+    int getEvenNumbers() {
+<span class="nc" id="L11">        int count = 0;</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="nc bnc" id="L13" title="All 4 branches missed.">            if (array[i] % 2 == 0 &amp;&amp; array[i] != 0) count++;</span>
+        }
+<span class="nc" id="L15">        return count;</span>
+    }
+
+    int getMultipliedSum() {
+<span class="fc" id="L19">        int sum = 0;</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="fc" id="L21">            sum += array[i];</span>
+        }
+<span class="fc" id="L23">        return sum * 3;</span>
+    }
+
+    int getDelta() {
+<span class="fc" id="L27">        max = 0;</span>
+<span class="fc" id="L28">        min = array[0];</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">            if (array[i] &gt;= max) max = array[i];</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">            if (array[i] &lt; min) min = array[i];</span>
+        }
+<span class="fc" id="L33">        return max - min;</span>
+    }
+
+    int getMean() {
+<span class="fc" id="L37">        int mean = 0;</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="fc" id="L39">            mean += array[i];</span>
+        }
+<span class="fc" id="L41">        return mean / size;</span>
+    }
+
+    int getMaxMinSum() {
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">            if (array[i] &gt;= max) max = array[i];</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">            if (array[i] &lt; min) min = array[i];</span>
+        }
+<span class="fc" id="L49">        return max + min;</span>
+    }
+
+    int getModuleMax() {
+<span class="fc" id="L53">        int moduleMax = 0;</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        for (int i = 0; i &lt; size; i++) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if (Math.abs(array[i]) &gt;= moduleMax) moduleMax = Math.abs(array[i]);</span>
+        }
+<span class="fc" id="L57">        return moduleMax;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>
