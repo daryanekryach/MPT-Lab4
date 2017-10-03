@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SortingsTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-10-02T03:44:10" hostname="WIN-A687THCC688" time="0.058">
+<testsuite name="SortingsTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-10-03T13:03:27" hostname="WIN-A687THCC688" time="0.062">
   <properties/>
-  <testcase name="afterNegTest" classname="SortingsTest" time="0.009"/>
+  <testcase name="afterNegTest" classname="SortingsTest" time="0.007"/>
   <testcase name="arrayCopyTest" classname="SortingsTest" time="0.004"/>
-  <testcase name="heapSortTest" classname="SortingsTest" time="0.014"/>
-  <testcase name="quickSortTest" classname="SortingsTest" time="0.002"/>
+  <testcase name="heapSortTest" classname="SortingsTest" time="0.016"/>
+  <testcase name="quickSortTest" classname="SortingsTest" time="0.003"/>
   <testcase name="meanTest" classname="SortingsTest" time="0.001"/>
-  <testcase name="moduleMaxTest" classname="SortingsTest" time="0.001"/>
+  <testcase name="moduleMaxTest" classname="SortingsTest" time="0.002"/>
   <testcase name="multipliedSumTest" classname="SortingsTest" time="0.0"/>
   <testcase name="deltaTest" classname="SortingsTest" time="0.0"/>
   <testcase name="shellSortTest" classname="SortingsTest" time="0.005"/>
   <testcase name="maxMinSumTest" classname="SortingsTest" time="0.0"/>
   <testcase name="insertionSortTest" classname="SortingsTest" time="0.007"/>
   <testcase name="bubbleSortTest" classname="SortingsTest" time="0.003"/>
-  <testcase name="beforeNegTest" classname="SortingsTest" time="0.0"/>
+  <testcase name="beforeNegTest" classname="SortingsTest" time="0.001"/>
   <testcase name="cycleSortTest" classname="SortingsTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

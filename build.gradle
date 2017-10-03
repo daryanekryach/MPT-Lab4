@@ -28,7 +28,9 @@ jar {
 
 task codeCoverageReport(type: JacocoReport) {
     executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
-
+	classDirectories ['src/main/java']
+	sourceDirectories fileTree(dir: "${project.buildDir}/classes/java/main")
+	
     subprojects.each {
         sourceSets it.sourceSets.main
     }
