@@ -1,3 +1,5 @@
+package refactored;
+
 public class BubbleSort implements Sorting {
     private int temp, n;
     private int[] array;

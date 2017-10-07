@@ -1,3 +1,5 @@
+package refactored;
+
 public class InsertionSort implements Sorting {
 
     private int temp;

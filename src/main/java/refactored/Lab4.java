@@ -1,10 +1,12 @@
+package refactored;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
 
 public class Lab4 {
-    static int[] array;
+    private static int[] array;
 
     public static void main(String[] args) {
         Random random = new Random();
@@ -17,7 +19,7 @@ public class Lab4 {
         arrayRun();
     }
 
-    public static void sortRun(){
+    private  static void sortRun(){
         InsertionSort insertion = new InsertionSort();
         QuickSort quick = new QuickSort();
         BubbleSort bubble = new BubbleSort();
@@ -38,7 +40,7 @@ public class Lab4 {
         cycle.sort(arrayCopy(array));
     }
 
-    public static void arrayRun(){
+    private  static void arrayRun(){
         System.out.print("Input array size: ");
 
         int size = checkInput();
@@ -82,7 +84,7 @@ public class Lab4 {
         return Arrays.copyOf(array, array.length);
     }
 
-    static void printMatrix(int[][] matrix) {
+    private static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
                 System.out.print(matrix[i][j] + "\t");
@@ -91,7 +93,7 @@ public class Lab4 {
         }
     }
 
-    static int checkInput() {
+    private static int checkInput() {
         Scanner input = new Scanner(System.in);
         int value;
         try {

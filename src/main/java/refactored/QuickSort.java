@@ -1,3 +1,5 @@
+package refactored;
+
 public class QuickSort implements Sorting {
 
     private int temp, middle, pivot;

@@ -1,3 +1,5 @@
+package refactored;
+
 public class CycleSort implements Sorting {
     private int value, position, temp;
     private int[] array;

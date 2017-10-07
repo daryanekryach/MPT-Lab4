@@ -1,3 +1,5 @@
+package refactored;
+
 public class ShellSort implements Sorting {
 
     private int temp, increment;

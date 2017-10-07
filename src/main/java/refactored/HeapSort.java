@@ -1,3 +1,5 @@
+package refactored;
+
 public class HeapSort implements Sorting{
     private int[] array;
     private int n, left, right, largest;

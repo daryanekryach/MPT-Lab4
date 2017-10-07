@@ -1,6 +1,9 @@
+package refactored;
+
 public class MatrixOperations {
-    int[][] matrix, newMatrix;
-    int matrixSize;
+    public int[][] matrix;
+    private int[][] newMatrix;
+    public int matrixSize;
 
     public MatrixOperations(int[][] _matrix){
         matrix=_matrix;
@@ -8,7 +11,7 @@ public class MatrixOperations {
         newMatrix = new int[matrixSize][matrixSize];
     }
 
-    int[][] getAfterNeg() {
+    public int[][] getAfterNeg() {
         boolean isNegative;
         int newItem = 0;
         for (int i = 0; i < matrixSize; i++) {
@@ -27,7 +30,7 @@ public class MatrixOperations {
         return newMatrix;
     }
 
-    int[][] getBeforeNeg() {
+    public int[][] getBeforeNeg() {
         boolean isNegative;
         int newItem = 0;
         for (int i = 0; i < matrixSize; i++) {
@@ -46,7 +49,7 @@ public class MatrixOperations {
         return newMatrix;
     }
 
-    void fillNewLine(int i, int newItem) {
+    private  void fillNewLine(int i, int newItem) {
         for (int j = 0; j < matrixSize; j++) {
             newMatrix[i][j] = newItem;
         }

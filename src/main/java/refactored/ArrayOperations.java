@@ -1,13 +1,16 @@
+package refactored;
+
 public class ArrayOperations {
-    int[] array;
-    int size, max, min;
+    public int[] array;
+    public int size;
+    private int max, min;
 
     public ArrayOperations(int[] _array) {
         array = _array;
         size = array.length;
     }
 
-    int getEvenNumbers() {
+    public int getEvenNumbers() {
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (array[i] % 2 == 0 && array[i] != 0) count++;
@@ -15,7 +18,7 @@ public class ArrayOperations {
         return count;
     }
 
-    int getMultipliedSum() {
+    public int getMultipliedSum() {
         int sum = 0;
         for (int i = 0; i < size; i++) {
             sum += array[i];
@@ -23,7 +26,7 @@ public class ArrayOperations {
         return sum * 3;
     }
 
-    int getDelta() {
+    public int getDelta() {
         max = 0;
         min = array[0];
         for (int i = 0; i < size; i++) {
@@ -33,7 +36,7 @@ public class ArrayOperations {
         return max - min;
     }
 
-    int getMean() {
+    public int getMean() {
         int mean = 0;
         for (int i = 0; i < size; i++) {
             mean += array[i];
@@ -41,7 +44,7 @@ public class ArrayOperations {
         return mean / size;
     }
 
-    int getMaxMinSum() {
+    public int getMaxMinSum() {
         for (int i = 0; i < size; i++) {
             if (array[i] >= max) max = array[i];
             if (array[i] < min) min = array[i];
@@ -49,7 +52,7 @@ public class ArrayOperations {
         return max + min;
     }
 
-    int getModuleMax() {
+    public int getModuleMax() {
         int moduleMax = 0;
         for (int i = 0; i < size; i++) {
             if (Math.abs(array[i]) >= moduleMax) moduleMax = Math.abs(array[i]);
