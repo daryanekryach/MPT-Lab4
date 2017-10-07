@@ -16,6 +16,9 @@ public class Lab4 {
         arrayRun();
     }
 
+    /**
+     * Method that runs all sorts for given array.
+     * */
     private static void sortRun() {
         InsertionSort insertion = new InsertionSort();
         QuickSort quick = new QuickSort();
@@ -32,6 +35,14 @@ public class Lab4 {
         cycle.sort(arrayCopy(array));
     }
 
+    /**
+     * Method that runs operations for array and matrix using ArrayOperations
+     * and MatrixOperations methods respectively.
+     * @see Lab4#getArrayOperationsInfo
+     * @see Lab4#getMatrixOperationsInfo(MatrixOperations)
+     * @see Lab4#printMatrix(int[][])
+     * @see Lab4#checkInput()
+     */
     private static void arrayRun() {
         System.out.print("Input array size: ");
         int size = checkInput();
@@ -57,6 +68,10 @@ public class Lab4 {
         return Arrays.copyOf(array, array.length);
     }
 
+    /**
+     * Method that prints given matrix to console.
+     * @param matrix - given matrix to print.
+     */
     private static void printMatrix(int[][] matrix) {
         for (int[] i:matrix) {
             for (int item:i)
@@ -65,6 +80,10 @@ public class Lab4 {
         }
     }
 
+    /**
+     * Methods that checks if the input value is an integer.
+     * @return integer value of input.
+     */
     private static int checkInput() {
         Scanner input = new Scanner(System.in);
         int value;
@@ -77,6 +96,12 @@ public class Lab4 {
         return value;
     }
 
+    /**
+     * Method that outputs statistic for operations on one dimension array
+     * using data after performing methods of ArrayOperations
+     * @param operations - instance of ArrayOperations that contains array
+     *                   method gives info of.
+     */
     private static void getArrayOperationsInfo(ArrayOperations operations){
         System.out.println("Number of even elements: " + operations.getEvenNumbers());
         System.out.println("Sum of elements  multiplied by 3: " + operations.getMultipliedSum());
@@ -86,6 +111,12 @@ public class Lab4 {
         System.out.println("Module max element: " + operations.getModuleMax());
     }
 
+    /**
+     * Method that outputs statistics for operations on two dimension array
+     * (read matrix) using data after performing methods of MatrixOperations
+     * @param matrixOperations - instance of MatrixOperations that contains
+     *                         matrix method gives info of.
+     */
     private static void getMatrixOperationsInfo(MatrixOperations matrixOperations){
 
         System.out.println("\nSum of the elements located behind the first negative element:");
