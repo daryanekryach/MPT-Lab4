@@ -7,9 +7,9 @@ jdk:
 - oraclejdk8
 
 before_install:
-  gradle wrapper
-  - sudo apt-get install jq
-  - wget -O ~/codacy-coverage-reporter-assembly-latest.jar $(curl https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r .assets[0].browser_download_url)
+- gradle wrapper
+- sudo apt-get install jq
+- wget -O ~/codacy-coverage-reporter-assembly-latest.jar $(curl https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r .assets[0].browser_download_url)
 
 before_script:
     - wget https://services.gradle.org/distributions/gradle-2.14-bin.zip
