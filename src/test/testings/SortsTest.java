@@ -83,11 +83,6 @@ public class SortsTest {
 
         assertArrayEquals(expectedArray, actualArray);
     }
-
-    @Test
-    public void arrayCopyTest() {
-        assertArrayEquals(originalArray, Lab4.arrayCopy(originalArray));
-    }
     //endregion
 }
 
