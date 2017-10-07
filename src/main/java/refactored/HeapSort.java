@@ -10,18 +10,18 @@ public class HeapSort implements Sorting{
         for (int i = n; i > 0; i--) {
             swap(0, i);
             n = n - 1;
-            maxHeap(array, 0);
+            maxHeap( 0);
         }
     }
 
     private void buildHeap(int[] a) {
         n = a.length - 1;
         for (int i = n / 2; i >= 0; i--) {
-            maxHeap(a, i);
+            maxHeap(i);
         }
     }
 
-    private void maxHeap(int[] a, int i) {
+    private void maxHeap(int i) {
         left = 2 * i;
         right = 2 * i + 1;
 
@@ -35,7 +35,7 @@ public class HeapSort implements Sorting{
 
         if (largest != i) {
             swap(i, largest);
-            maxHeap(array, largest);
+            maxHeap(largest);
         }
     }
 
