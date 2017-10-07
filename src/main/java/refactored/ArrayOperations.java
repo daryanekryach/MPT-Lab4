@@ -13,7 +13,7 @@ public class ArrayOperations {
     public int getEvenNumbers() {
         int count = 0;
         for (int i = 0; i < size; i++) {
-            if (array[i] % 2 == 0 && array[i] != 0) count++;
+            if (array[i] % 2 == 0) count++;
         }
         return count;
     }

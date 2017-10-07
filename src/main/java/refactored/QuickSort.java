@@ -1,19 +1,17 @@
 package refactored;
 
 public class QuickSort implements Sorting {
-
-    private int temp, middle, pivot;
+    private int  pivot;
     private int i,j;
-    public void sort(int[] array) {}
 
-    public void Sort(int[] array, int start, int end) {
+    public void sort(int[] array, int start, int end) {
         if (array == null || array.length == 0)
             return;
 
         if (start >= end)
             return;
 
-        middle = start + (end - start) / 2;
+        int middle = start + (end - start) / 2;
         pivot = array[middle];
 
          i = start;
@@ -33,14 +31,14 @@ public class QuickSort implements Sorting {
         }
 
         if (start < j)
-            Sort(array, start, j);
+            sort(array, start, j);
 
         if (end > i)
-            Sort(array, i, end);
+            sort(array, i, end);
     }
 
     private void swap(int[] array) {
-        temp = array[i];
+        int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
         i++;

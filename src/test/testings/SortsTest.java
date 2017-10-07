@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Random;
 import refactored.*;
 
-public class SortingsTest {
+public class SortsTest {
     private int[] originalArray, expectedArray, actualArray;
 
     @Before
@@ -69,7 +69,7 @@ public class SortingsTest {
         QuickSort quickSort = new QuickSort();
         fillArrays();
         Arrays.sort(expectedArray);
-        quickSort.Sort(actualArray, 0, actualArray.length - 1);
+        quickSort.sort(actualArray, 0, actualArray.length - 1);
 
         assertArrayEquals(expectedArray, actualArray);
     }

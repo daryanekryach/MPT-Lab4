@@ -5,12 +5,11 @@ import static org.junit.Assert.*;
 import refactored.MatrixOperations;
 
 public class MatrixOperationsTest {
-    private int[][] matrixToOperate;
     private MatrixOperations matrixOperations;
 
     @Before
     public void init() {
-        matrixToOperate = new int[][]{
+        int[][] matrixToOperate = new int[][]{
                 {4, -3, 0, 5},
                 {-1, 5, 8, -4},
                 {4, 7, 1, 0},

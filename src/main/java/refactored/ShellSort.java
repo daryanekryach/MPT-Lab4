@@ -1,16 +1,12 @@
 package refactored;
 
 public class ShellSort implements Sorting {
-
-    private int temp, increment;
-    private int[] array;
-
-    public void sort(int[] _array) {
-        array = _array;
-        increment = array.length / 2;
+    public void sort(int[] array) {
+       int increment = array.length / 2;
+       int j, temp;
         while (increment > 0) {
             for (int i = increment; i < array.length; i++) {
-                int j = i;
+                j = i;
                 temp = array[i];
                 while (j >= increment && array[j - increment] > temp) {
                     array[j] = array[j - increment];
@@ -23,18 +19,4 @@ public class ShellSort implements Sorting {
         }
     }
 
-//    private int swap(int j) {
-//        array[j] = array[j - increment];
-//        j = j - increment;
-//        return j;
-//    }
-//
-//    private void Swap(int i) {
-//        int j = i;
-//        temp = array[i];
-//        while (j >= increment && array[j - increment] > temp) {
-//            swap(j);
-//        }
-//        array[j] = temp;
-//    }
 }

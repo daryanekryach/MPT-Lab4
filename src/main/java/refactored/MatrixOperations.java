@@ -50,8 +50,7 @@ public class MatrixOperations {
     }
 
     private  void fillNewLine(int i, int newItem) {
-        for (int j = 0; j < matrixSize; j++) {
+        for (int j = 0; j < matrixSize; j++)
             newMatrix[i][j] = newItem;
-        }
     }
 }

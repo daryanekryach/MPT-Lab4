@@ -1,8 +1,6 @@
 package refactored;
 
 public class InsertionSort implements Sorting {
-
-    private int temp;
     private int[] array;
 
     public void sort(int[] _array) {
@@ -17,7 +15,7 @@ public class InsertionSort implements Sorting {
     }
 
     private void swap(int j) {
-        temp = array[j];
+        int temp = array[j];
         array[j] = array[j - 1];
         array[j - 1] = temp;
     }

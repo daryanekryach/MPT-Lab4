@@ -1,7 +1,7 @@
 package refactored;
 
 public class CycleSort implements Sorting {
-    private int value, position, temp;
+    private int value, position;
     private int[] array;
 
     public void sort(int[] _array) {
@@ -36,7 +36,7 @@ public class CycleSort implements Sorting {
     }
 
     private void swap(){
-        temp = array[position];
+        int temp = array[position];
         array[position] = value;
         value = temp;
     }

@@ -1,8 +1,8 @@
 package refactored;
 
-public class HeapSort implements Sorting{
+public class HeapSort implements Sorting {
     private int[] array;
-    private int n, left, right, largest;
+    private int n;
 
     public void sort(int[] _array) {
         array = _array;
@@ -10,7 +10,7 @@ public class HeapSort implements Sorting{
         for (int i = n; i > 0; i--) {
             swap(0, i);
             n = n - 1;
-            maxHeap( 0);
+            maxHeap(0);
         }
     }
 
@@ -22,8 +22,9 @@ public class HeapSort implements Sorting{
     }
 
     private void maxHeap(int i) {
-        left = 2 * i;
-        right = 2 * i + 1;
+        int left = 2 * i;
+        int right = 2 * i + 1;
+        int largest;
 
         if (left <= n && array[left] > array[i])
             largest = left;

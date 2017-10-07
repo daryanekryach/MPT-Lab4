@@ -6,20 +6,19 @@ import java.util.Random;
 import java.util.Arrays;
 
 public class Lab4 {
-    private static int[] array;
+    public static int[] array;
 
     public static void main(String[] args) {
         Random random = new Random();
-        int[] array = new int[20];
-        for (int i = 0; i < 20; i++) {
+        array = new int[20];
+        for (int i = 0; i < 20; i++)
             array[i] = random.nextInt(50);
-        }
 
         sortRun();
         arrayRun();
     }
 
-    private  static void sortRun(){
+    private static void sortRun() {
         InsertionSort insertion = new InsertionSort();
         QuickSort quick = new QuickSort();
         BubbleSort bubble = new BubbleSort();
@@ -29,7 +28,7 @@ public class Lab4 {
 
         insertion.sort(arrayCopy(array));
 
-        quick.Sort(arrayCopy(array), 0, arrayCopy(array).length - 1);
+        quick.sort(arrayCopy(array), 0, arrayCopy(array).length - 1);
 
         bubble.sort(arrayCopy(array));
 
@@ -40,16 +39,15 @@ public class Lab4 {
         cycle.sort(arrayCopy(array));
     }
 
-    private  static void arrayRun(){
+    private static void arrayRun() {
         System.out.print("Input array size: ");
 
         int size = checkInput();
         int[] array = new int[size];
 
         System.out.println("Insert array elements:");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
             array[i] = checkInput();
-        }
 
         ArrayOperations operations = new ArrayOperations(array);
 
@@ -62,13 +60,13 @@ public class Lab4 {
 
         System.out.print("\nSet matrix dimension: ");
         size = checkInput();
+
         int[][] matrix = new int[size][size];
         Random random = new Random();
 
         for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+            for (int j = 0; j < size; j++)
                 matrix[i][j] = random.nextInt(30) - 15;
-            }
         }
 
         MatrixOperations matrixOperations = new MatrixOperations(matrix);
@@ -80,15 +78,14 @@ public class Lab4 {
         printMatrix(matrixOperations.getBeforeNeg());
     }
 
-    public static int[] arrayCopy(int[] array){
+    public static int[] arrayCopy(int[] array) {
         return Arrays.copyOf(array, array.length);
     }
 
     private static void printMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix.length; j++) {
-                System.out.print(matrix[i][j] + "\t");
-            }
+        for (int[] i:matrix) {
+            for (int item:i)
+                System.out.print(item + "\t");
             System.out.print("\n");
         }
     }

@@ -5,12 +5,11 @@ import static org.junit.Assert.*;
 import refactored.ArrayOperations;
 
 public class ArrayOperationsTest {
-    private int[]  arrayToOperate;
     private ArrayOperations arrayOperations;
 
     @Before
     public void init() {
-        arrayToOperate = new int[]{3, 5, 4, 1, 9, 0, 0, 2, 10, 7};
+        int[] arrayToOperate = new int[]{3, 5, 4, 1, 9, 0, 0, 2, 10, 7};
         arrayOperations = new ArrayOperations(arrayToOperate);
     }
 
@@ -51,6 +50,12 @@ public class ArrayOperationsTest {
     public void meanTest() {
         int actual = arrayOperations.getMean();
         assertEquals(4, actual);
+    }
+
+    @Test
+    public void evenNumbersTest(){
+        int actual = arrayOperations.getEvenNumbers();
+        assertEquals(5, actual);
     }
 
     @Test
