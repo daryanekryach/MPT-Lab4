@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testings.ArrayOperationsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-07T16:56:17" hostname="Anvym6" time="0.009">
+  <properties/>
+  <testcase name="checkNullArray" classname="testings.ArrayOperationsTest" time="0.005"/>
+  <testcase name="meanTest" classname="testings.ArrayOperationsTest" time="0.001"/>
+  <testcase name="moduleMaxTest" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <testcase name="identicalValuesArray" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <testcase name="multipliedSumTest" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <testcase name="deltaTest" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <testcase name="checkOneItemArray" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <testcase name="maxMinSumTest" classname="testings.ArrayOperationsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

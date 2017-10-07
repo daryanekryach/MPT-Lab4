@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testings.SortingsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-07T16:56:17" hostname="Anvym6" time="0.151">
+  <properties/>
+  <testcase name="arrayCopyTest" classname="testings.SortingsTest" time="0.053"/>
+  <testcase name="heapSortTest" classname="testings.SortingsTest" time="0.029"/>
+  <testcase name="quickSortTest" classname="testings.SortingsTest" time="0.027"/>
+  <testcase name="shellSortTest" classname="testings.SortingsTest" time="0.012"/>
+  <testcase name="insertionSortTest" classname="testings.SortingsTest" time="0.005"/>
+  <testcase name="bubbleSortTest" classname="testings.SortingsTest" time="0.004"/>
+  <testcase name="cycleSortTest" classname="testings.SortingsTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
