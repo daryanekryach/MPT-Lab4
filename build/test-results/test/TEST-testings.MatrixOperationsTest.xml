@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testings.MatrixOperationsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-07T16:56:17" hostname="Anvym6" time="0.021">
+<testsuite name="testings.MatrixOperationsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-10-09T13:01:38" hostname="Anvym6" time="0.011">
   <properties/>
-  <testcase name="afterNegTest" classname="testings.MatrixOperationsTest" time="0.019"/>
+  <testcase name="afterNegTest" classname="testings.MatrixOperationsTest" time="0.009"/>
   <testcase name="checkNullMatrix" classname="testings.MatrixOperationsTest" time="0.0"/>
   <testcase name="beforeNegTest" classname="testings.MatrixOperationsTest" time="0.0"/>
   <testcase name="checkOneItemMatrix" classname="testings.MatrixOperationsTest" time="0.0"/>
