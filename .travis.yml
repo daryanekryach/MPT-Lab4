@@ -3,9 +3,15 @@ sudo: required
 
 install: /bin/true
 
-jdk:
-- openjdk7
-- oraclejdk8
+
+matrix:
+  include:
+  - java: "1.6"
+    env: openjdk6
+  - java: "1.7"
+    env: oraclejdk7
+  - java: "1.8"
+    env: oraclejdk8
 
 before_install:
 - gradle wrapper
