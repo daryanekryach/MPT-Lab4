@@ -3,15 +3,16 @@ sudo: required
 
 install: /bin/true
 
+environment:
+  matrix:
+  - JAVA_HOME: C:\Program Files\Java\jdk1.6.0
+  - JAVA_HOME: C:\Program Files\Java\jdk1.7.0
+  - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
 
-matrix:
-  include:
-  - java: "1.6"
-    env: openjdk6
-  - java: "1.7"
-    env: oraclejdk7
-  - java: "1.8"
-    env: oraclejdk8
+jdk:
+  - openjdk6
+  - oraclejdk7
+  - oraclejdk8
 
 before_install:
 - gradle wrapper
